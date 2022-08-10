@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Hello React</title>
+    </head>
+    <body>
+        <div id="root"></div>>
+
+         
+        <!-- This defines core APIs. Important class in React is React.Component -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.2/umd/react.production.min.js"></script>
+
+        <!-- Methods for working with HTML DOM and rendering it -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.2/umd/react-dom.production.min.js"></script>
+
+        <script>
+            const greetingEl=React.createElement(
+                'h1',{
+                    id:'intro',
+                    title:'introduction to React'
+                },
+                // 'Hello React',
+                React.createElement(
+                    'span',
+                    null,
+                    'React is a front end library'
+                )
+            );
+            ReactDOM.render(greetingEl, document.getElementById('root'));
+            </script>
+        </body>
+        </html>
